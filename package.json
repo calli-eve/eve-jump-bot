@@ -1,0 +1,17 @@
+{
+  "name": "eve-jump-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate-static-jumps": "tsc --outDir dist src/generate-graphs/generate-jump-graph.ts && node -e 'require(\"./dist/generate-jump-graph.js\").generateStaticJumpGraph()' "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^9.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6"
+  }
+}
